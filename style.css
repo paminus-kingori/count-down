@@ -63,6 +63,10 @@ aside{
     margin-right: 2.5rem;
     letter-spacing: 4px;
 }
+
+aside:last-child{
+    margin-right: unset;
+}
 .icons{
     margin: 2rem 0;
 }
@@ -115,8 +119,9 @@ footer{
     position: absolute;
     bottom: 25px;
 }
-.attribution { margin-top: 2rem;
-    font-size: 11px;
+.attribution { 
+    margin-top: 2rem;
+    font-size: 13px;
      text-align: center;
      }
 .attribution a {
