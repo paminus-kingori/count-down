@@ -63,7 +63,10 @@ aside{
     margin-right: 2.5rem;
     letter-spacing: 4px;
 }
-
+.counter aside{
+    position: relative;
+    overflow-x: hidden;
+}
 aside:last-child{
     margin-right: unset;
 }
@@ -97,15 +100,25 @@ aside:last-child{
     top: 0;
     left: 0;
     width: 100%;
+    transform-style: preserve-3d;
     height: 50%;
     /* z-index: -1; */
     background-color: #00000026;
+    /* animation: rot 3s .5s ease infinite; */
 }
+@keyframes rot{
+    100%{
+        /* transform: rotateX(90deg); */
+        bottom: 0;
+        top: unset;
+    }
+}
+
 .left-circle, .right-circle{
     position: absolute;
-    /* top: 50%; */
+    top: 33%;
     width: 10px;
-    /* height: 10px; */
+    z-index: 4;
 }
 .left-circle{
     left: -5px;
@@ -119,13 +132,16 @@ footer{
     position: absolute;
     bottom: 25px;
 }
+.icons img:hover{
+    filter: invert(46%) sepia(94%) saturate(788%) hue-rotate(310deg) brightness(100%) contrast(97%);
+}
 .attribution { 
     margin-top: 2rem;
     font-size: 13px;
      text-align: center;
      }
 .attribution a {
- color:  hsl(345, 95%, 68%);
+ color:  #fb6087;
 text-decoration: none;
 }
 
