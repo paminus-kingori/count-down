@@ -94,6 +94,10 @@ aside:last-child{
     position: relative;
     overflow-x: hidden;
 }
+.card h1{
+    color: hsl(345, 95%, 68%);
+    font-size: 4rem;
+}
 .card::before{
     content: "";
     position: absolute;
@@ -152,10 +156,13 @@ text-decoration: none;
         max-width:300px;
     }
     .card{
-        font-size: 1.8rem;
         width: 65px;
         height: 65px;
+        font-size: 1.8rem;
         margin-bottom: 1rem;
+    }
+    .card h1{
+        font-size: 1.8rem;
     }
     aside{
         margin-right:1rem;

@@ -9,7 +9,7 @@ let days = document.querySelector(".days")
 // }
 
 // console.log(removeTime(sec.innerText))
-let bday = [21,0,59,59];
+let bday = [20,24,59,59];
 
 
 const findDifference = ()=>{
@@ -20,7 +20,7 @@ let todMin = today.getMinutes();
 let todSec = today.getSeconds();
 
     days.innerText =bday[0] - day 
-    hrs.innerText = todHrs - bday[1]
+    hrs.innerText = bday[1] - todHrs 
     min.innerText = bday[2] - todMin 
     sec.innerText = bday[3] - todSec
 }
